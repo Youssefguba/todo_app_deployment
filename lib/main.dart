@@ -13,7 +13,7 @@ import 'features/todos/data/todo_repository.dart';
 import 'firebase_options.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 
-Future<void> main() async {
+Future<void> runMainApp() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Set environment before running the app

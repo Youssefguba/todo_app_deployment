@@ -23,6 +23,44 @@
           "other_platform_oauth_client": []
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922133151099:android:c8babeb6301102334211de",
+        "android_client_info": {
+          "package_name": "com.todo_app.todo_app_v2.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfhfs0xdKsc89XnVafdMHIKLSeRMoBID0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922133151099:android:c2a6d457e54dabc24211de",
+        "android_client_info": {
+          "package_name": "com.todo_app.todo_app_v2.stg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfhfs0xdKsc89XnVafdMHIKLSeRMoBID0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
     }
   ],
   "configuration_version": "1"

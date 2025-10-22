@@ -92,7 +92,7 @@ if (EnvironmentConfig.isDevelopment) {
 
 // For HTTP client setup:
 final client = http.Client();
-final response = await client.get(
+final response = await Dio().get(
   Uri.parse('${EnvironmentConfig.baseUrl}/users'),
   headers: {
     'Authorization': 'Bearer ${EnvironmentConfig.apiKey}',

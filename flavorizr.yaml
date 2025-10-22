@@ -1,0 +1,39 @@
+flavorizr:
+  ide: "idea"
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+
+flavors:
+  dev:
+    app:
+      name: "Todo App Dev"
+    android:
+      applicationId: "com.todo_app.todo_app_v2.dev"
+      icon: "assets/android/dev.png"
+    ios:
+      bundleId: "com.todo_app.todo_app_v2.dev"
+      icon: "assets/android/dev.png"
+
+
+  stg:
+    app:
+      name: "Todo App Stg"
+    android:
+      applicationId: "com.todo_app.todo_app_v2.stg"
+      icon: "assets/android/stg.png"
+    ios:
+      bundleId: "com.todo_app.todo_app_v2.stg"
+      icon: "assets/android/stg.png"
+
+
+  prod:
+    app:
+      name: "Todo App"
+    android:
+      applicationId: "com.todo_app.todo_app_v2"
+      icon: "assets/android/android_icon.png"
+
+    ios:
+      bundleId: "com.todo_app.todo_app_v2"
+      icon: "assets/android/android_icon.png"
