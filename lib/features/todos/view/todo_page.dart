@@ -16,17 +16,6 @@ class TodoPage extends StatefulWidget {
   @override
   State<TodoPage> createState() => _TodoPageState();
 
-  static Future<void> _showCreateDialog(BuildContext context) async {
-    final result = await showDialog<TodoFormResult>(
-      context: context,
-      builder: (context) => const TodoFormDialog(),
-    );
-    if (result == null) return;
-    await context.read<TodoCubit>().addTodo(
-      title: result.title,
-      description: result.description,
-    );
-  }
 }
 
 class _TodoPageState extends State<TodoPage> {
@@ -62,17 +51,30 @@ class _TodoPageState extends State<TodoPage> {
           appBar: AppBar(title: const Text(AppConstants.appName)),
           body: const _TodoBody(),
           floatingActionButton: FloatingActionButton(
-            // onPressed: () => _showCreateDialog(context),
-            onPressed: () {
-              setState(() {
-                throwError = true;
-              });
-            },
+            onPressed: () => _showCreateDialog(context),
+            // onPressed: () {
+            //   setState(() {
+            //     throwError = true;
+            //   });
+            // },
             child: const Icon(Icons.add),
           ),
         ),
       );
     }
+  }
+
+
+   Future<void> _showCreateDialog(BuildContext context) async {
+    final result = await showDialog<TodoFormResult>(
+      context: context,
+      builder: (context) => const TodoFormDialog(),
+    );
+    if (result == null) return;
+    await context.read<TodoCubit>().addTodo(
+      title: result.title,
+      description: result.description,
+    );
   }
 }
 
